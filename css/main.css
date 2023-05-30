@@ -3,7 +3,6 @@
   font-family: Anuphan;
   src: url(../assets/font/Anuphan.ttf);
 }
-
 body {
   height: auto;
 }
@@ -70,7 +69,6 @@ p {
 }
 
 /*--------Index---------*/
-
 .container-fluid .presentation img {
   margin: 10px 0px 15px 0px;
   width: 50%;
@@ -100,15 +98,12 @@ p {
     display: flex;
     flex-wrap: wrap;
   }
-
   .fin-presentation {
     display: flex;
     flex-direction: column;
   }
 }
-
 /*------historia--------*/
-
 .historia {
   display: grid;
   margin: 3% 5% 5% 3%;
@@ -117,13 +112,7 @@ p {
   align-items: start;
   justify-content: center;
   gap: 2%;
-
-  grid-template-areas:
-    "text1 img1"
-    "img2 text2"
-    "text3 img3"
-    "text4 img4"
-  ;
+  grid-template-areas: "text1 img1" "img2 text2" "text3 img3" "text4 img4";
 }
 
 .text1 {
@@ -132,7 +121,6 @@ p {
 
 .text2 {
   grid-area: text2;
-
 }
 
 .text3 {
@@ -164,7 +152,6 @@ img {
 }
 
 /*------bodegas---------*/
-
 .bodegas-mendoza {
   display: flex;
   flex-direction: column;
@@ -185,7 +172,6 @@ img {
     flex-direction: row-reverse;
   }
 }
-
 .bodegas img {
   width: 100px;
   height: 100px;
@@ -201,7 +187,6 @@ img {
 }
 
 /*----estilos---------*/
-
 .contenedor-estilos {
   margin-top: 30px;
   display: flex;
@@ -224,10 +209,10 @@ img {
   height: 400px;
 }
 
-
 /*------Premiados---------*/
-
 .premiados img {
   width: 40px;
   margin: 10px;
 }
+
+/*# sourceMappingURL=main.css.map */
