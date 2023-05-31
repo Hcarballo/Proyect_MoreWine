@@ -1,0 +1,36 @@
+/*------bodegas---------*/
+  
+.bodegas-mendoza {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .div {
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  @media (max-width: 1030px) {
+    .div {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+  
+  .bodegas img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .bodegas .text {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .bodegas a {
+    color: rgb(170, 170, 228);
+  }

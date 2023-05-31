@@ -1,0 +1,71 @@
+/*------General-------*/
+@font-face {
+    font-family: Anuphan;
+    src: url(../assets/font/Anuphan.ttf);
+  }
+  
+  body {
+    height: auto;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  a {
+    font-family: Anuphan;
+    color: white;
+    text-decoration: none;
+  }
+  
+  h1 {
+    font-size: 400%;
+  }
+  
+  p {
+    text-align: justify;
+  }
+  
+  .navbar .collapse .navbar-collapse {
+    flex-grow: inherit;
+  }
+  
+  .navbar a {
+    color: white;
+  }
+  
+  .navbar .navbar-toggler {
+    border-color: white;
+  }
+  
+  .navbar-toggler-icon {
+    color: white;
+  }
+  
+  .nav-link:focus,
+  .nav-link:hover {
+    color: blanchedalmond;
+  }
+  
+  .container-fluid {
+    background-image: url(../assets/img/Background_princ.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    margin: 10% 0 0 0;
+  }
+  
+  .redes img {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+  }
+  

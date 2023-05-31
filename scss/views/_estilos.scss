@@ -1,0 +1,23 @@
+ /*----estilos---------*/
+  
+ .contenedor-estilos {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .estilo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .estilo h5 {
+    margin: 30px;
+  }
+  
+  .contenedor-estilos img {
+    width: 400px;
+    height: 400px;
+  }

@@ -1,0 +1,55 @@
+/*------historia--------*/
+  
+.historia {
+    display: grid;
+    margin: 3% 5% 5% 3%;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr;
+    align-items: start;
+    justify-content: center;
+    gap: 2%;
+  
+    grid-template-areas:
+      "text1 img1"
+      "img2 text2"
+      "text3 img3"
+      "text4 img4"
+    ;
+  }
+  
+  .text1 {
+    grid-area: text1;
+  }
+  
+  .text2 {
+    grid-area: text2;
+  
+  }
+  
+  .text3 {
+    grid-area: text3;
+  }
+  
+  .text4 {
+    grid-area: text4;
+  }
+  
+  .img1 {
+    grid-area: img1;
+  }
+  
+  .img2 {
+    grid-area: img2;
+  }
+  
+  .img3 {
+    grid-area: img3;
+  }
+  
+  .img4 {
+    grid-area: img4;
+  }
+  
+  img {
+    width: 100%;
+  }

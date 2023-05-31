@@ -1,0 +1,47 @@
+ /*--------Index---------*/
+  
+ .container-fluid .presentation img {
+    margin: 10px 0px 15px 0px;
+    width: 50%; 
+    border-radius: 5px;        
+  }
+
+  .presentation-text {
+    width: 100%;
+    margin: 0px 15px;
+  }
+  
+  .presentation-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .fin-presentation {
+    display: flex;
+    margin: 5% 0 0 0;
+  }
+  
+  .fin-presentation div {
+    margin: 10px 10px;
+  }
+  
+  @media (max-width: 1023px) {
+
+    .container-fluid .presentation img {
+      margin: 10px 0px 15px 0px;
+      width: 100%;
+      border-radius: 5px;
+      height: 400px;
+    }
+    .presentation-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .fin-presentation {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  
