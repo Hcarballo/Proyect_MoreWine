@@ -1,23 +1,23 @@
  /*----estilos---------*/
-  
+
  .contenedor-estilos {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .estilo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .estilo h5 {
-    margin: 30px;
-  }
-  
-  .contenedor-estilos img {
-    width: 400px;
-    height: 400px;
-  }
+   margin-top: 10%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+ }
+
+ .estilo {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .estilo h5 {
+   margin: 5% 0% 5% 0%;
+   text-align: justify;
+ }
+
+ .contenedor-estilos img {
+   width: 80%;
+ }

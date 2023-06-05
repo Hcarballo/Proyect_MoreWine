@@ -3,8 +3,8 @@
   font-family: Anuphan;
   src: url(../assets/font/Anuphan.ttf);
 }
-body {
-  height: auto;
+main {
+  margin-top: 3%;
 }
 
 h1,
@@ -13,6 +13,7 @@ h3,
 h4,
 h5,
 p,
+.registro label,
 a {
   font-family: Anuphan;
   color: white;
@@ -48,10 +49,11 @@ p {
   color: blanchedalmond;
 }
 
-.container-fluid {
+body {
   background-image: url(../assets/img/Background_princ.jpg);
   background-position: center;
   background-size: cover;
+  padding: 5%;
 }
 
 .footer {
@@ -69,7 +71,7 @@ p {
 }
 
 /*--------Index---------*/
-.container-fluid .presentation img {
+.imgpres {
   margin: 10px 0px 15px 0px;
   width: 50%;
   border-radius: 5px;
@@ -85,17 +87,20 @@ p {
   flex-direction: row;
 }
 
-.fin-presentation {
+.index_section {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   margin: 5% 0 0 0;
 }
-
-.fin-presentation div {
-  margin: 10px 10px;
+.index_section div {
+  width: 50%;
+  padding: 10px;
 }
 
 @media (max-width: 1023px) {
-  .container-fluid .presentation img {
+  .imgpres {
     margin: 10px 0px 15px 0px;
     width: 100%;
     border-radius: 5px;
@@ -104,9 +109,12 @@ p {
     display: flex;
     flex-wrap: wrap;
   }
-  .fin-presentation {
+  .index_section {
     display: flex;
     flex-direction: column;
+  }
+  .index_section div {
+    width: 100%;
   }
 }
 /*------bodegas---------*/
@@ -117,7 +125,7 @@ p {
   align-items: flex-start;
 }
 
-.div {
+.bodega {
   display: flex;
   margin: 10px;
   flex-direction: row;
@@ -125,7 +133,7 @@ p {
 }
 
 @media (max-width: 1030px) {
-  .div {
+  .bodega {
     display: flex;
     flex-direction: row-reverse;
   }
@@ -147,7 +155,7 @@ p {
 
 /*----estilos---------*/
 .contenedor-estilos {
-  margin-top: 30px;
+  margin-top: 10%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -160,24 +168,31 @@ p {
 }
 
 .estilo h5 {
-  margin: 30px;
+  margin: 5% 0% 5% 0%;
+  text-align: justify;
 }
 
 .contenedor-estilos img {
-  width: 400px;
-  height: 400px;
+  width: 80%;
 }
 
 /*------Premiados---------*/
 .premiados img {
   width: 40px;
+  height: 180px;
   margin: 10px;
+}
+
+.premiados li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 /*------historia--------*/
 .historia {
   display: grid;
-  margin: 3% 5% 5% 3%;
+  margin: 3% 0% 0% 3%;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 2fr 2fr 2fr 2fr;
   align-items: start;
@@ -218,8 +233,54 @@ p {
   grid-area: img4;
 }
 
-img {
+.img_hist {
   width: 100%;
+  height: 300px;
+  margin-top: 4%;
+}
+
+@media (max-width: 800px) {
+  .historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .historia .img_hist {
+    width: 100%;
+    height: 300px;
+    margin: 3% 0% 5% 0%;
+  }
+}
+.section_1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section_1 .espacio_catas {
+  width: 50%;
+}
+
+@media (max-width: 800px) {
+  .section_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .espacio_catas {
+    width: 100%;
+  }
+}
+.img_catas {
+  width: 100%;
+}
+
+.formulario {
+  margin-top: 10%;
+}
+
+.boton {
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

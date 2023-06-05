@@ -2,10 +2,10 @@
 @font-face {
     font-family: Anuphan;
     src: url(../assets/font/Anuphan.ttf);
-  }
-  
-  body {
-    height: auto;
+  }  
+
+  main{
+    margin-top: 3%;
   }
   
   h1,
@@ -14,6 +14,7 @@
   h4,
   h5,
   p,
+  .registro label,
   a {
     font-family: Anuphan;
     color: white;
@@ -49,10 +50,11 @@
     color: blanchedalmond;
   }
   
-  .container-fluid {
+  body {
     background-image: url(../assets/img/Background_princ.jpg);
     background-position: center;
     background-size: cover;
+    padding: 5%;
   }
   
   .footer {
