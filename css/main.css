@@ -13,6 +13,7 @@ h3,
 h4,
 h5,
 p,
+li,
 .registro label,
 a {
   font-family: Anuphan;
@@ -198,7 +199,7 @@ body {
   align-items: start;
   justify-content: center;
   gap: 2%;
-  grid-template-areas: "text1 img1" "img2 text2" "text3 img3" "text4 img4";
+  grid-template-areas: "text1 img1" "img2 text2" "text3 img3" "img4 text4";
 }
 
 .text1 {
@@ -251,36 +252,45 @@ body {
     margin: 3% 0% 5% 0%;
   }
 }
-.section_1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.section_1 .espacio_catas {
-  width: 50%;
+.grid_catas {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  gap: 2%;
+  grid-template-areas: "section_1 section_1 aside" "section_catas section_catas aside" "form form form";
 }
 
-@media (max-width: 800px) {
-  .section_1 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .espacio_catas {
-    width: 100%;
-  }
+.section_1 {
+  grid-area: section_1;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
 }
-.img_catas {
+.section_1 .img_catas {
   width: 100%;
 }
 
-.formulario {
-  margin-top: 10%;
+.aside {
+  grid-area: aside;
+}
+.aside iframe {
+  margin: 1%;
 }
 
-.boton {
-  margin-top: 10px;
+.section_catas {
+  grid-area: section_catas;
+}
+.section_catas .card_catas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1%;
+}
+.section_catas .card_catas .card {
+  margin: 1%;
+}
+
+.form {
+  grid-area: form;
 }
 
 /*# sourceMappingURL=main.css.map */
