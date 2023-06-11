@@ -1,7 +1,6 @@
 .grid_catas {
     display: grid;
     grid-template-columns: 3fr 2fr 2fr;
-    grid-template-rows: 1fr 2fr 1fr;
     gap: 2%;
 
     grid-template-areas:
@@ -16,7 +15,7 @@
 .section_1 {
     grid-area: section_1;
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 2fr;
 
     .img_catas {
         width: 100%;
@@ -25,7 +24,8 @@
 
 .aside {
     grid-area: aside;
-    iframe{
+
+    iframe {
         margin: 1%;
     }
 }
@@ -39,8 +39,14 @@
         flex-wrap: wrap;
         gap: 1%;
 
-        .card {
+        .property {
+            background: transparent;
+            border-color: beige;
             margin: 1%;
+        }
+
+        .card-botton {
+            text-align: center;
         }
     }
 }
@@ -48,4 +54,7 @@
 .form {
     grid-area: form;
 
+    .button {
+        margin-top: 1%;
+    }
 }

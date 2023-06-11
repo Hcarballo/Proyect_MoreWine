@@ -255,7 +255,6 @@ body {
 .grid_catas {
   display: grid;
   grid-template-columns: 3fr 2fr 2fr;
-  grid-template-rows: 1fr 2fr 1fr;
   gap: 2%;
   grid-template-areas: "section_1 section_1 aside" "section_catas section_catas aside" "form form form";
 }
@@ -263,7 +262,7 @@ body {
 .section_1 {
   grid-area: section_1;
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 2fr;
 }
 .section_1 .img_catas {
   width: 100%;
@@ -285,12 +284,20 @@ body {
   flex-wrap: wrap;
   gap: 1%;
 }
-.section_catas .card_catas .card {
+.section_catas .card_catas .property {
+  background: transparent;
+  border-color: beige;
   margin: 1%;
+}
+.section_catas .card_catas .card-botton {
+  text-align: center;
 }
 
 .form {
   grid-area: form;
+}
+.form .button {
+  margin-top: 1%;
 }
 
 /*# sourceMappingURL=main.css.map */
