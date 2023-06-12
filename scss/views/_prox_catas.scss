@@ -10,8 +10,6 @@
     ;
 }
 
-
-
 .section_1 {
     grid-area: section_1;
     display: grid;
@@ -19,6 +17,7 @@
 
     .img_catas {
         width: 100%;
+        height: 300%;
     }
 }
 

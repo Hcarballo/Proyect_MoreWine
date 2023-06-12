@@ -161,6 +161,9 @@ body {
   flex-direction: column;
   gap: 20px;
 }
+.contenedor-estilos img {
+  width: 60%;
+}
 
 .estilo {
   display: flex;
@@ -171,10 +174,6 @@ body {
 .estilo h5 {
   margin: 5% 0% 5% 0%;
   text-align: justify;
-}
-
-.contenedor-estilos img {
-  width: 80%;
 }
 
 /*------Premiados---------*/
@@ -266,6 +265,7 @@ body {
 }
 .section_1 .img_catas {
   width: 100%;
+  height: 300%;
 }
 
 .aside {
