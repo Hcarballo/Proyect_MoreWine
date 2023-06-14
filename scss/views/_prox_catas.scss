@@ -24,10 +24,46 @@
 .aside {
     grid-area: aside;
 
+    .section-promociones {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10%;
+
+        .promos {
+            display: flex;
+            flex-direction: row;
+            gap: 2%;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+            margin-top: 3%;
+
+            .imagen {
+                width: 50%;
+            }
+
+            .comentario {
+                width: 50%;
+
+                p {
+                    text-align: left;
+                }
+
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
     iframe {
         margin: 1%;
     }
+
 }
+
+
+
 
 .section_catas {
     grid-area: section_catas;

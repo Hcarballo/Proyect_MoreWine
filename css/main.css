@@ -271,6 +271,31 @@ body {
 .aside {
   grid-area: aside;
 }
+.aside .section-promociones {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
+}
+.aside .section-promociones .promos {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin-top: 3%;
+}
+.aside .section-promociones .promos .imagen {
+  width: 50%;
+}
+.aside .section-promociones .promos .comentario {
+  width: 50%;
+}
+.aside .section-promociones .promos .comentario p {
+  text-align: left;
+}
+.aside img {
+  width: 100%;
+}
 .aside iframe {
   margin: 1%;
 }
