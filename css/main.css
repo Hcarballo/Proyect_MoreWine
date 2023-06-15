@@ -255,7 +255,7 @@ body {
   display: grid;
   grid-template-columns: 3fr 2fr 2fr;
   gap: 2%;
-  grid-template-areas: "section_1 section_1 aside" "section_catas section_catas aside" "form form form";
+  grid-template-areas: "section_1 section_1 aside" "section_catas section_catas aside" "formulario formulario formulario";
 }
 
 .section_1 {
@@ -270,6 +270,10 @@ body {
 
 .aside {
   grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
 }
 .aside .section-promociones {
   display: flex;
@@ -285,13 +289,22 @@ body {
   margin-top: 3%;
 }
 .aside .section-promociones .promos .imagen {
-  width: 50%;
+  width: 100%;
 }
 .aside .section-promociones .promos .comentario {
-  width: 50%;
+  width: 100%;
 }
 .aside .section-promociones .promos .comentario p {
   text-align: left;
+}
+@media (max-width: 860px) {
+  .aside .section-promociones .promos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2%;
+    margin-top: 3%;
+  }
 }
 .aside img {
   width: 100%;
@@ -318,10 +331,10 @@ body {
   text-align: center;
 }
 
-.form {
-  grid-area: form;
+.formulario {
+  grid-area: formulario;
 }
-.form .button {
+.formulario .button {
   margin-top: 1%;
 }
 
