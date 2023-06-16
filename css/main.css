@@ -177,16 +177,29 @@ body {
 }
 
 /*------Premiados---------*/
-.premiados img {
+.premiados {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+}
+
+.premiados_nac {
+  width: 30%;
+}
+.premiados_nac img {
   width: 40px;
   height: 180px;
   margin: 10px;
 }
-
-.premiados li {
+.premiados_nac li {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
+  align-items: center;
+}
+
+.premiados_mundo {
+  width: 70%;
 }
 
 /*------historia--------*/

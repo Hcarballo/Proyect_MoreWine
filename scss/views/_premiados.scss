@@ -1,13 +1,28 @@
   /*------Premiados---------*/
-  
-  .premiados img {
-    width: 40px;
-    height: 180px;
-    margin: 10px;
+  .premiados {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
   }
 
-  .premiados li{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+  .premiados_nac {
+    width: 30%;
+
+    img {
+      width: 40px;
+      height: 180px;
+      margin: 10px;
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+
+  }
+
+  .premiados_mundo {
+    width: 70%;
   }
