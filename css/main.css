@@ -185,10 +185,15 @@ body {
 
 .premiados_nac {
   width: 30%;
+  border-left-style: solid;
+  border-color: darkgray;
+  margin-left: 5%;
+}
+.premiados_nac h3 {
+  text-align: center;
 }
 .premiados_nac img {
-  width: 40px;
-  height: 180px;
+  width: 80%;
   margin: 10px;
 }
 .premiados_nac li {

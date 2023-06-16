@@ -7,10 +7,16 @@
 
   .premiados_nac {
     width: 30%;
+    border-left-style: solid;
+    border-color: darkgray;
+    margin-left: 5%;
 
-    img {
-      width: 40px;
-      height: 180px;
+    h3{
+      text-align: center;
+    }
+
+    img {  
+      width: 80%;   
       margin: 10px;
     }
 
