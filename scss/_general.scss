@@ -1,75 +1,79 @@
 /*------General-------*/
 
 @font-face {
-    font-family: Anuphan;
-    src: url(../assets/font/Anuphan.ttf);
-  }  
+  font-family: Anuphan;
+  src: url(../assets/font/Anuphan.ttf);
+}
 
-  main{
-    margin-top: 3%;
+main {
+  margin-top: 3%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li,
+.registro label,
+a {
+  font-family: Anuphan;
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 400%;
+}
+
+p {
+  text-align: justify;
+}
+.navbar {
+  .collapse {
+    .navbar-collapse {
+      flex-grow: inherit;
+    }
   }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  p,
-  li,
-  .registro label,
+
+
   a {
-    font-family: Anuphan;
-    color: white;
-    text-decoration: none;
-  }
-  
-  h1 {
-    font-size: 400%;
-  }
-  
-  p {
-    text-align: justify;
-  }
-  
-  .navbar .collapse .navbar-collapse {
-    flex-grow: inherit;
-  }
-  
-  .navbar a {
     color: white;
   }
-  
-  .navbar .navbar-toggler {
+
+  .navbar-toggler {
     border-color: white;
   }
-  
+
   .navbar-toggler-icon {
     color: white;
   }
-  
+
+
   .nav-link:focus,
   .nav-link:hover {
     color: blanchedalmond;
   }
-  
-  body {
-    background-image: url(../assets/img/Background_princ.webp);
-    background-position: center;
-    background-size: cover;
-    padding: 5%;
-  }
-  
-  .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: end;
-    margin: 10% 0 0 0;
-  }
-  
-  .redes img {
-    width: 30px;
-    height: 30px;
-    margin: 3px;
-  }
-  
+
+}
+body {
+  background-image: url(../assets/img/Background_princ.webp);
+  background-position: center;
+  background-size: cover;
+  padding: 5%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  margin: 10% 0 0 0;
+}
+
+.redes img {
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+}

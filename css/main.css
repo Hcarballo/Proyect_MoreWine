@@ -32,21 +32,17 @@ p {
 .navbar .collapse .navbar-collapse {
   flex-grow: inherit;
 }
-
 .navbar a {
   color: white;
 }
-
 .navbar .navbar-toggler {
   border-color: white;
 }
-
-.navbar-toggler-icon {
+.navbar .navbar-toggler-icon {
   color: white;
 }
-
-.nav-link:focus,
-.nav-link:hover {
+.navbar .nav-link:focus,
+.navbar .nav-link:hover {
   color: blanchedalmond;
 }
 
