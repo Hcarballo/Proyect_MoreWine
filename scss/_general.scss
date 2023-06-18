@@ -30,6 +30,7 @@ h1 {
 p {
   text-align: justify;
 }
+
 .navbar {
   .collapse {
     .navbar-collapse {
@@ -57,12 +58,14 @@ p {
   }
 
 }
+
 body {
   background-image: url(../assets/img/Background_princ.webp);
   background-position: center;
   background-size: cover;
   padding: 5%;
 }
+
 
 .footer {
   display: flex;

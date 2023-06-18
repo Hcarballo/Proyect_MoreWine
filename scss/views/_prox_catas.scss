@@ -1,3 +1,10 @@
+/*-------------prox_catas------------*/
+
+$background_reg: #808080;
+$trigger: 1720px;
+$color: #808080;
+$borde: 2px solid #a92d2d;
+
 .grid_catas {
     display: grid;
     grid-template-columns: 3fr 2fr 2fr;
@@ -55,8 +62,8 @@
             }
         }
 
-        @media (max-width: 860px) {
-            
+        @media (max-width: ($trigger/2)) {
+
             .promos {
                 display: flex;
                 flex-direction: column;
@@ -64,6 +71,7 @@
                 gap: 2%;
                 margin-top: 3%;
             }
+
         }
     }
 
@@ -99,10 +107,30 @@
     }
 }
 
+@mixin property_boton($color, $borde) {
+    background-color: $color;
+    border: $borde;
+}
+
+
 .formulario {
     grid-area: formulario;
 
     .button {
         margin-top: 1%;
     }
+
+    .boton {
+        @include property_boton($color, $borde )
+    }
+
+    @media (max-width: 860px) {
+
+        .reg {
+            background-color: $background_reg;
+            border-radius: 3px;
+        }
+
+    }
+
 }

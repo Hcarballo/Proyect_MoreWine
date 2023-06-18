@@ -115,22 +115,20 @@ body {
   }
 }
 /*------bodegas---------*/
-.bodegas-mendoza {
+.bodegas .bodegas-mendoza {
   display: flex;
   flex-direction: column;
   align-content: space-between;
   align-items: flex-start;
 }
-
-.bodega {
+.bodegas .bodegas-mendoza .bodega {
   display: flex;
   margin: 10px;
   flex-direction: row;
   justify-content: space-evenly;
 }
-
 @media (max-width: 1030px) {
-  .bodega {
+  .bodegas .bodegas-mendoza .bodega {
     display: flex;
     flex-direction: row-reverse;
   }
@@ -140,12 +138,10 @@ body {
   height: 100px;
   margin-top: 5%;
 }
-
 .bodegas .text {
   margin-left: 10px;
   margin-right: 10px;
 }
-
 .bodegas a {
   color: rgb(170, 170, 228);
 }
@@ -160,14 +156,12 @@ body {
 .contenedor-estilos img {
   width: 60%;
 }
-
-.estilo {
+.contenedor-estilos .estilo {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.estilo h5 {
+.contenedor-estilos .estilo h5 {
   margin: 5% 0% 5% 0%;
   text-align: justify;
 }
@@ -214,40 +208,31 @@ body {
   gap: 2%;
   grid-template-areas: "text1 img1" "img2 text2" "text3 img3" "img4 text4";
 }
-
-.text1 {
+.historia .text1 {
   grid-area: text1;
 }
-
-.text2 {
+.historia .text2 {
   grid-area: text2;
 }
-
-.text3 {
+.historia .text3 {
   grid-area: text3;
 }
-
-.text4 {
+.historia .text4 {
   grid-area: text4;
 }
-
-.img1 {
+.historia .img1 {
   grid-area: img1;
 }
-
-.img2 {
+.historia .img2 {
   grid-area: img2;
 }
-
-.img3 {
+.historia .img3 {
   grid-area: img3;
 }
-
-.img4 {
+.historia .img4 {
   grid-area: img4;
 }
-
-.img_hist {
+.historia .img_hist {
   width: 100%;
   height: 300px;
   margin-top: 4%;
@@ -265,6 +250,7 @@ body {
     margin: 3% 0% 5% 0%;
   }
 }
+/*-------------prox_catas------------*/
 .grid_catas {
   display: grid;
   grid-template-columns: 3fr 2fr 2fr;
@@ -350,6 +336,16 @@ body {
 }
 .formulario .button {
   margin-top: 1%;
+}
+.formulario .boton {
+  background-color: #808080;
+  border: 2px solid #a92d2d;
+}
+@media (max-width: 860px) {
+  .formulario .reg {
+    background-color: #808080;
+    border-radius: 3px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
